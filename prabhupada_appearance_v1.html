@@ -41,10 +41,54 @@
       .img-box {
           height: 200px;
       }
-      
+      header{
+        position: sticky;
+        top: 0px;
+        font-size: x-large;
+        font-family:'Times New Roman', Times, serif;
+        z-index: 10;
+        background-color: gold;
+      }
     </style>
   </head>
   <body>
+        <!--header-->
+        <header>
+          <!--navigation bar-->
+          <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <img src="https://vanimedia.org/w/images/thumb/a/ad/1969_Two_Essays_SP.jpg/249px-1969_Two_Essays_SP.jpg" alt="AGTSP" width="30"> Prabhupāda kṛpā As It Is
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Start Here</a>
+                  </li>
+                  <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Short Books</a></li>
+                      <li><a class="dropdown-item" href="#">Srimad Bhagavatam</a></li>
+                      <li><a class="dropdown-item" href="#">Caitanya Caritamrta</a></li>
+                    </ul>
+                  </div>
+                  <li class="nav-item">
+                    <div class="container-fluid">
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search your book" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--/navigation bar-->
+        </header>
+        <!--/header-->
     <h1 align="justify">
       All the pre-78 books of His Divine Grace A.C. Bhaktivedanta Swami
       Prabhupāda are available here for free download.
