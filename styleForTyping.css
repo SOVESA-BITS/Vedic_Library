@@ -1,10 +1,10 @@
-body {
+/* body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #ffcc00;
-}
+} */
 @keyframes cursor {
   from,
   to {
@@ -60,21 +60,35 @@ body {
 .typing-slider p:nth-child(1) {
   animation-delay: 0s;
 }
-.typing-slider p:nth-child(1)::after {
+/* .typing-slider p:nth-child(1)::after {
   animation-delay: 0s;
   animation-timing-function: steps(16), step-end;
-}
+} */
 .typing-slider p:nth-child(2) {
   animation-delay: 5s;
 }
-.typing-slider p:nth-child(2)::after {
+/* .typing-slider p:nth-child(2)::after {
   animation-delay: 5s;
   animation-timing-function: steps(23), step-end;
-}
+} */
 .typing-slider p:nth-child(3) {
   animation-delay: 10s;
 }
-.typing-slider p:nth-child(3)::after {
+/* .typing-slider p:nth-child(3)::after {
   animation-delay: 10s;
   animation-timing-function: steps(12), step-end;
+} */
+.typing-slider p:nth-child(4) {
+  animation-delay: 15s;
 }
+/* .typing-slider p:nth-child(4)::after {
+  animation-delay: 15s;
+  animation-timing-function: steps(12), step-end;
+} */
+.typing-slider p:nth-child(5) {
+  animation-delay: 20s;
+}
+/* .typing-slider p:nth-child(5)::after {
+  animation-delay: 20s;
+  animation-timing-function: steps(12), step-end;
+} */
