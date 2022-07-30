@@ -2,7 +2,7 @@
 .card {
   width: 200px !important;
   /* overflow is hidden to prevent content 
-             from overflow */
+               from overflow */
   overflow: hidden;
   height: 250px !important;
   text-align: center;
@@ -13,8 +13,8 @@
   padding-bottom: 5px;
   width: 100px;
   /* These three lines make image to be displayed 
-             in center. Please don't change them or else 
-             site will collapse :) */
+               in center. Please don't change them or else 
+               site will collapse :) */
   position: relative;
   top: 50%;
   transform: translateY(-50%);
