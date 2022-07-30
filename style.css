@@ -1,4 +1,5 @@
-<!-- css found below is to override bootstrap css -- > .card {
+/* css found below is to override bootstrap css */
+.card {
   width: 200px !important;
   /* overflow is hidden to prevent content 
              from overflow */
