@@ -10,14 +10,26 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
-    <script src="typingAnimation.js"></script>
-    <link rel="stylesheet" href="styleForCards.css" />
-    <link rel="stylesheet" href="styleForTyping.css" />
+    <script src="pencilTypingEffect.js"></script>
+    <!-- <script src="typingAnimation.js"></script> -->
+    <!-- <link rel="stylesheet" href="styleForCards.css" /> -->
+    <!-- <link rel="stylesheet" href="styleForTyping.css" /> -->
+    <link rel="stylesheet" href="pencilTypingEffect.css" />
+    <link rel="stylesheet" href="styleForCardsAnother.css" />
+
+    <!-- streetscript is a nice font-family which i may use for headings -->
+
     <!-- <link rel="stylesheet" href="styleForTypingVariant.css" /> -->
     <title>His Divine Grace As It Is Books.</title>
   </head>
@@ -77,8 +89,20 @@
       <!--/navigation bar-->
     </header>
     <!--/header-->
-    <h1 align="justify">
-      <!-- <div id="typing-slider">
+
+    <div class="pencilTyping">
+      <pencilTyping>
+        <span
+          class="txt-type"
+          data-wait="2500"
+          data-words='["All the pre-78 books of", "His Divine Grace", "A.C. Bhaktivedanta Swami", "Prabhupāda are available", "here for free download."]'
+        ></span
+        ><i class="fas fa-pencil-alt"></i>
+      </pencilTyping>
+    </div>
+
+    <!-- <h1 align="justify">
+      <div id="typing-slider">
         <div id="text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolorem
           quae tempora culpa dicta harum excepturi accusantium recusandae
@@ -86,15 +110,33 @@
           doloremque quas!
         </div>
         <div id="cursor"></div>
-      </div> -->
-      <div class="typing-slider">
+      </div>
+       <div class="typing-slider">
         <p>All the pre-78 books of</p>
         <p>His Divine Grace</p>
         <p>A.C. Bhaktivedanta Swami</p>
         <p>Prabhupāda are available</p>
         <p>here for free download.</p>
+      </div> 
+    </h1> -->
+    <div class="card">
+      <img src="\SB cover images\jpg\sb1_2.pdf_1.jpg" alt="some error" />
+      <div class="descriptions">
+        <h1>John Wick 3</h1>
+        <p>
+          After gunning down a member of the High Table -- the shadowy
+          international assassin's guild -- legendary hit man John Wick finds
+          himself stripped of the organization's protective services. Now stuck
+          with a $14 million bounty on his head, Wick must fight his way through
+          the streets of New York as he becomes the target of the world's most
+          ruthless killers.
+        </p>
+        <button>
+          <i class="fab fa-youtube"></i>
+          Play trailer on YouTube
+        </button>
       </div>
-    </h1>
+    </div>
     <div class="row g-4" id="myUL">
       <div class="col">
         <div class="card h-100">
