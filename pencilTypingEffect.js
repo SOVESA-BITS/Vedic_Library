@@ -78,7 +78,7 @@ function init() {
   const words = [
     "All the pre-78 books of",
     "His Divine Grace",
-    "A.C. Bhaktivedanta Swami?",
+    "A.C. Bhaktivedanta Swami",
     "Prabhupāda are available",
     "here for free download.",
   ];
