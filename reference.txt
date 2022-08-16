@@ -1,2 +1,3 @@
 [1] typing effect: chosen 16th and 17th template from https://www.webtopic.com/css-typing-animation-examples/ 
 [2] card css: chosen 1st template from https://www.webtopic.com/css-card-design-examples
+[3] bootstrap v5.2.0
