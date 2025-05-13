@@ -1,0 +1,135 @@
+body {
+  font-family: 'Quicksand', Arial, sans-serif;
+  background: linear-gradient(120deg, #FFF6E5 0%, #FFD6B2 100%);
+  color: #4B2E05;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  background: #FFE7C2;
+  border-bottom: 2px solid #FFD6B2;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #B86B2B;
+  letter-spacing: 2px;
+}
+
+header p {
+  color: #A86C3A;
+  font-size: 1.2rem;
+}
+
+nav {
+  background: #FFD6B2;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 4px rgba(184, 107, 43, 0.05);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #B86B2B;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #A86C3A;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #FFF9F3;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(184, 107, 43, 0.07);
+  padding: 2rem 1.5rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+section h2 {
+  color: #B86B2B;
+  border-bottom: 1px solid #FFD6B2;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #FFE7C2;
+  color: #A86C3A;
+  font-size: 0.95rem;
+  border-top: 2px solid #FFD6B2;
+}
+
+.prayer-block {
+  background: #FFF6E5;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(184, 107, 43, 0.07);
+}
+
+.prayer-block h3 {
+  color: #B86B2B;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.prayer-block .sanskrit {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.05rem;
+  color: #7A4C16;
+  margin: 0.25rem 0 0.25rem 0;
+  line-height: 1.6;
+  font-weight: 400; /* Ensure normal weight to avoid boldening */
+  font-variant-ligatures: none; /* Disable ligatures that might affect rendering */
+  font-feature-settings: "liga" 0; /* Disable standard ligatures */
+  text-align: center;
+
+}
+
+.prayer-block .translation {
+  font-size: 0.98rem;
+  color: #5C3B16;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem 0.2rem;
+  }
+  .prayer-block {
+    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+  }
+  .prayer-block h3 {
+    font-size: 1.05rem;
+  }
+  .prayer-block .sanskrit,
+  .prayer-block .translation {
+    font-size: 0.97rem;
+  }
+}
+
