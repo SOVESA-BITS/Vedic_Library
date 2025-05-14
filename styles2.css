@@ -81,49 +81,55 @@ footer {
 }
 
 .prayer-block {
-    background: #FFF6E5;
-    margin-bottom: 1.5rem;
-    padding: 1rem 1rem 0.5rem 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(184, 107, 43, 0.07);
+  background: #FFF6E5;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 0.5rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(184, 107, 43, 0.07);
 }
 
 .prayer-block h3 {
-    color: #B86B2B;
-    font-size: 1.15rem;
-    margin-bottom: 0.5rem;
+  color: #B86B2B;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
 }
 
 .prayer-block .sanskrit {
-    font-family: 'Quicksand', Arial, sans-serif;
-    font-size: 1.05rem;
-    color: #7A4C16;
-    margin: 0.25rem 0 0.25rem 0;
-    line-height: 1.6;
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-size: 1.05rem;
+  color: #7A4C16;
+  margin: 0.25rem 0 0.25rem 0;
+  line-height: 1.6;
+  font-weight: 400; /* Ensure normal weight to avoid boldening */
+  font-variant-ligatures: none; /* Disable ligatures that might affect rendering */
+  font-feature-settings: "liga" 0; /* Disable standard ligatures */
+  text-align: center;
+
 }
 
 .prayer-block .translation {
-    font-size: 0.98rem;
-    color: #5C3B16;
-    margin-bottom: 0.5rem;
-    font-style: italic;
-    line-height: 1.5;
+  font-size: 0.98rem;
+  color: #5C3B16;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
 }
 
 /* Responsive adjustments */
 @media (max-width: 600px) {
-    main {
-        padding: 1rem 0.2rem;
-    }
-    .prayer-block {
-        padding: 0.7rem 0.5rem 0.3rem 0.5rem;
-    }
-    .prayer-block h3 {
-        font-size: 1.05rem;
-    }
-    .prayer-block .sanskrit,
-    .prayer-block .translation {
-        font-size: 0.97rem;
-    }
+  main {
+    padding: 1rem 0.2rem;
+  }
+  .prayer-block {
+    padding: 0.7rem 0.5rem 0.3rem 0.5rem;
+  }
+  .prayer-block h3 {
+    font-size: 1.05rem;
+  }
+  .prayer-block .sanskrit,
+  .prayer-block .translation {
+    font-size: 0.97rem;
+  }
 }
-  
+
