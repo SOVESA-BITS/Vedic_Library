@@ -323,13 +323,13 @@ main {
 }
 
 /* Prayer/Arati/Verse Blocks */
-.prayer-block {
+/* .prayer-block {
   background: white;
   padding: 1.5rem;
   margin: 1.5rem 0;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+} */
 
 .prayer-block {
   background: #FFF6E5;
@@ -341,13 +341,18 @@ main {
 
 .prayer-block h3 {
   color: #B86B2B;
-  font-size: 1.15rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(184, 107, 43, 0.08);
+  text-align: center;
+  margin-bottom: 1.2rem;
 }
 
 .prayer-block .sanskrit {
   font-family: 'Quicksand', Arial, sans-serif;
-  font-size: 1.05rem;
+  font-size: 1.07rem;
   color: #7A4C16;
   margin: 0.25rem 0 0.25rem 0;
   line-height: 1.6;
@@ -367,6 +372,38 @@ main {
   text-align: left;
 }
 
+/* the below should probably be named arati-note, look into why that stops working later */
+.tulsi-note {
+  background: #FFF9F3;
+  color: #7A4C16;
+  border-left: 4px solid #FFD6B2;
+  padding: 0.9rem 1rem;
+  margin: 1.1rem 0;
+  border-radius: 7px;
+  font-style: normal;
+  font-size: 1.01rem;
+}
+
+.arati-verses {
+  margin: 1rem 0 1rem 1.3rem;
+  padding-left: 1.2rem;
+}
+
+.arati-verses li {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.meaning {
+  font-size: 0.98rem;
+  color: #5C3B16;
+  text-align: left;
+  font-style: italic;
+  margin-bottom: 0.7rem;
+}
+
+
+
 /* Responsive adjustments */
 @media (max-width: 600px) {
   main {
@@ -381,6 +418,9 @@ main {
   .prayer-block .sanskrit,
   .prayer-block .translation {
     font-size: 0.97rem;
+  }
+  .audio-section {
+    padding: 1rem 0.5rem;
   }
 }
 
@@ -405,6 +445,149 @@ main {
   }
 }
 
+.offense-section {
+  background: #FFF9F3;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(184, 107, 43, 0.04);
+}
+
+.offense-section h3 {
+  color: #B86B2B;
+  margin-top: 0;
+}
+
+.offense-section ol {
+  margin: 1rem 0 1rem 1.3rem;
+  padding-left: 1.2rem;
+}
+
+.offense-section li {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+.offense-section blockquote {
+  background: #FFE7C2;
+  border-left: 4px solid #B86B2B;
+  margin: 1.2rem 0;
+  padding: 1rem 1.2rem;
+  font-style: italic;
+  color: #7A4C16;
+  border-radius: 6px;
+}
+
+.offense-section .highlight {
+  color: #C07C2B;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 700px) {
+  .offense-section {
+    padding: 1rem 0.5rem;
+  }
+}
+
+.audio-section {
+  background: #FFF9F3;
+  border-radius: 10px;
+  padding: 1rem 1rem 0.5rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(184, 107, 43, 0.04);
+}
+
+.audio-link {
+  display: inline-block;
+  background: #FFD6B2;
+  color: #B86B2B;
+  text-decoration: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.audio-link:hover {
+  background: #FFE7C2;
+  color: #A86C3A;
+}
+
+.info-note {
+  background: #FFE7C2;
+  border-left: 4px solid #B86B2B;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  color: #7A4C16;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(184, 107, 43, 0.06);
+}
+
+
+.table-section {
+  background: #FFF9F3;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(184, 107, 43, 0.04);
+}
+
+.table-section h3 {
+  color: #B86B2B;
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.1rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.iast-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 1.05rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(184, 107, 43, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 350px;
+}
+
+.iast-table th, .iast-table td {
+  border: 1px solid #FFD6B2;
+  padding: 0.6rem 0.9rem;
+  text-align: center;
+}
+
+.iast-table th {
+  background: #FFD6B2;
+  color: #7A4C16;
+  font-weight: 700;
+}
+
+.iast-table td {
+  color: #4B2E05;
+}
+
+@media (max-width: 700px) {
+  .iast-table th, .iast-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.98rem;
+  }
+  .table-section {
+    padding: 1rem 0.3rem;
+  }
+}
+
+
+
 /* Footer */
 footer {
   text-align: center;
@@ -416,4 +599,3 @@ footer {
   margin-top: 2.5rem;
   box-shadow: var(--shadow);
 }
-
